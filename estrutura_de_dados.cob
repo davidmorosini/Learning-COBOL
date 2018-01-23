@@ -90,6 +90,10 @@
            ACCEPT WRK-VARIAVEL-TESTE.
            DISPLAY "A entrada e: " WRK-VARIAVEL-TESTE.
 
+           IF WRK-VARIAVEL-TESTE IS NOT ALPHABETIC-UPPER
+               DISPLAY "Apenas CAIXA ALTA.."
+           END-IF
+
       *Entrada de dados a partir do sistema
            ACCEPT WRK-DATA-ATUAL           FROM DATE.
            ACCEPT WRK-DATA-ATUAL-JULIANA   FROM DAY.
